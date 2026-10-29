@@ -1,0 +1,36 @@
+# Dépendances et builds
+**/node_modules/
+**/vendor/
+**/dist/
+.venv/
+
+# Secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Base de données et données
+backend-laravel/storage/mysql/
+**/*.ibd
+**/*.sqlite
+**/*.sql.gz
+
+# Outils et cache
+.agents/
+.codex/
+.phpunit.result.cache
+*.bak
+*.old
+.DS_Store
+*.log
+
+# Scripts de debug et de test
+backend-laravel/info.php
+backend-laravel/diagnostic.php
+backend-laravel/test_*.php
+backend-laravel/index.php
+frontend-react/index-working.html
+frontend-react/demo-mode-backup.js
+demo-mode-backup.js
+test*.sh
+test_*.sh

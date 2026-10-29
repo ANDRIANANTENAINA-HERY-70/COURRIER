@@ -1,0 +1,165 @@
+.admin-reset-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background:
+    radial-gradient(circle at top, rgba(59, 130, 246, 0.18), transparent 36%),
+    linear-gradient(135deg, #020617 0%, #0f172a 45%, #111827 100%);
+}
+
+.admin-reset-card {
+  width: 100%;
+  max-width: 520px;
+  background: rgba(15, 23, 42, 0.96);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.38);
+  color: #e5e7eb;
+}
+
+.admin-reset-header {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.admin-reset-icon {
+  font-size: 2rem;
+  color: #60a5fa;
+  margin-bottom: 0.75rem;
+}
+
+.admin-reset-header h1 {
+  margin: 0 0 0.4rem;
+  font-size: 1.7rem;
+  color: #f8fafc;
+}
+
+.admin-reset-header p {
+  margin: 0;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.admin-reset-info {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 0.85rem;
+  background: rgba(30, 41, 59, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  color: #e2e8f0;
+  line-height: 1.45;
+}
+
+.admin-reset-expiry {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #93c5fd;
+  font-weight: 600;
+}
+
+.admin-reset-code-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.85rem;
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.22);
+  text-align: center;
+}
+
+.admin-reset-code-box span {
+  display: block;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #bfdbfe;
+  margin-bottom: 0.5rem;
+}
+
+.admin-reset-code-box strong {
+  display: block;
+  font-size: 2rem;
+  letter-spacing: 0.22em;
+  color: #f8fafc;
+}
+
+.admin-reset-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.admin-reset-copy,
+.admin-reset-back {
+  flex: 1 1 180px;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.9rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.admin-reset-copy {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+}
+
+.admin-reset-back {
+  background: rgba(30, 41, 59, 0.95);
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.admin-reset-copy:hover,
+.admin-reset-back:hover,
+.admin-reset-link:hover {
+  transform: translateY(-1px);
+}
+
+.admin-reset-copy:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.admin-reset-link {
+  display: inline-flex;
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.admin-reset-link:hover {
+  text-decoration: underline;
+}
+
+.admin-reset-copy-message {
+  margin: 0.9rem 0 0;
+  text-align: center;
+  color: #bbf7d0;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .admin-reset-card {
+    padding: 1.25rem;
+  }
+
+  .admin-reset-code-box strong {
+    font-size: 1.65rem;
+  }
+}

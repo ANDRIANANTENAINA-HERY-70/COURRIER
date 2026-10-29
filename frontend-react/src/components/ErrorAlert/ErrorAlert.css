@@ -1,0 +1,148 @@
+.error-alert-container {
+  margin-bottom: 20px;
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-alert {
+  background: linear-gradient(135deg, #fee 0%, #fdd 100%);
+  border: 1px solid #f5a5a5;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.1);
+  transition: all 0.3s ease;
+}
+
+.error-alert:hover {
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.15);
+}
+
+.error-alert-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.error-alert-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: #dc2626;
+  font-size: 20px;
+}
+
+.error-alert-title {
+  font-weight: 600;
+  color: #dc2626;
+  flex: 1;
+  font-size: 14px;
+}
+
+.error-alert-close {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: #dc2626;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  font-size: 18px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.error-alert-close:hover {
+  color: #b91c1c;
+  background-color: rgba(220, 38, 38, 0.1);
+}
+
+.error-alert-content {
+  margin-top: 8px;
+}
+
+.error-message-single {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 4px;
+}
+
+.error-list {
+  margin: 8px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.error-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: #b91c1c;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.error-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.error-bullet {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.error-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .error-alert {
+  background: linear-gradient(135deg, #7f1d1d 0%, #6d1f1f 100%);
+  border-color: #dc2626;
+}
+
+[data-theme="dark"] .error-alert-title {
+  color: #fca5a5;
+}
+
+[data-theme="dark"] .error-alert-icon {
+  color: #fca5a5;
+}
+
+[data-theme="dark"] .error-alert-close {
+  color: #fca5a5;
+}
+
+[data-theme="dark"] .error-alert-close:hover {
+  color: #fee2e2;
+  background-color: rgba(252, 165, 165, 0.1);
+}
+
+[data-theme="dark"] .error-message-single {
+  color: #fecaca;
+}
+
+[data-theme="dark"] .error-list-item {
+  color: #fecaca;
+}
